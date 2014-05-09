@@ -1,0 +1,22 @@
+<Alloy>
+    <!-- <Collection src="contacts"/> -->
+    <Window class="container" id="suggestContactWindow" fullscreen="false" navBarHidden="false" layout="vertical">
+		<View platform="ios" class="statusBar" id="statusBar"/>
+		<View platform="ios" class="navBar">
+			<View class="leftNavbarButton" id="cancelNavBarButton" onClick="closeSuggestContactWindow">
+				<ImageView id="ic_navigation_cancel" class="ios_navigation_icon" image="ic_navigation_cancel.png" touchEnabled="false"/>
+			</View>
+			<Label class="navBarTitle" id="navBarTitle"/>
+			<View class="navBarTouchBlocker" id="navBarTouchBlocker" bubbleParent="false" touchEnabled="false"/>
+		</View>
+		<ScrollView id="suggestContactView" class="container" layout="absolute" touchEnabled="true">
+	        <TableView id="suggestContactsTable" onClick="confirmShareContact" top="0dp"/>
+<!-- 	        <TableView dataCollection="contacts" dataTransform="formAvatarUrl" onClick="confirmShareContact" top="0dp">
+	            <TableViewRow class="contactRow" contact_id="{id}" user_id="{user_id}">
+	            	<ImageView class="contactAvatar" image="{avatar}"/>
+	            	<Label class="contactFullname" text="{fullname}"/>
+	            </TableViewRow>
+	        </TableView>
+ -->		</ScrollView>
+    </Window>
+</Alloy>

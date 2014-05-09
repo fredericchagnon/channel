@@ -1,0 +1,16 @@
+"#skypeNameLabel": {text: L('name_label')},
+"#skypeValueLabel": {text: L('skype_value_label')},
+"#skypeNameValue": {hintText: L('')},
+"#skypeValueValue": {hintText: L('')},
+"#deleteSkypeButton": {
+	backgroundColor: "#FF5859",
+},
+"#saveSkypeButton": {
+	backgroundColor: "#53A93F",
+},
+"#deleteSkypeButtonLabel": {
+	text: L('delete'),
+},
+"#saveSkypeButtonLabel": {
+	text: L('save'),
+},

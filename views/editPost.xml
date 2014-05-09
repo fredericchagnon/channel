@@ -1,0 +1,54 @@
+<Alloy>
+    <Window class="container" id="editHandleWindow" fullscreen="false" navBarHidden="false" layout="vertical">
+		<View platform="ios" class="statusBar" id="statusBar"/>
+		<View platform="ios" class="navBar">
+			<View class="leftNavbarButton" onClick="closeEditHandleWindow">
+				<ImageView id="ic_navigation_cancel" class="ios_navigation_icon" image="ic_navigation_cancel.png" touchEnabled="false"/>
+			</View>
+			<Label class="navBarTitle" id="navBarTitle"/>
+		</View>
+		<ScrollView class="container" id="handleEditView" layout="vertical">
+			<View class="handleItemContainer" id="handleNameContainer" layout="vertical">
+				<Label class="sectionItemKey" id="handleNameLabel"/>
+				<TextField class="fullWidthTextFieldWithKey" id="handleNameValue" onReturn="focusStreet1" keyboardType="Titanium.UI.KEYBOARD_ASCII" autocapitalization="Titanium.UI.TEXT_AUTOCAPITALIZATION_NONE"/>
+				<View platform="ios" class="iosTextFieldUnderline"/>
+			</View>
+			<View class="handleItemContainer" id="handleStreet1Container" layout="vertical">
+				<Label class="sectionItemKey" id="handleStreet1Label"/>
+				<TextField class="fullWidthTextFieldWithKey" id="handleStreet1Value" onReturn="focusStreet2" keyboardType="Titanium.UI.KEYBOARD_ASCII" autocapitalization="Titanium.UI.TEXT_AUTOCAPITALIZATION_NONE"/>
+				<View platform="ios" class="iosTextFieldUnderline"/>
+			</View>
+			<View class="handleItemContainer" id="handleStreet2Container" layout="vertical">
+				<Label class="sectionItemKey" id="handleStreet2Label"/>
+				<TextField class="fullWidthTextFieldWithKey" id="handleStreet2Value" onReturn="focusLocality" keyboardType="Titanium.UI.KEYBOARD_ASCII" autocapitalization="Titanium.UI.TEXT_AUTOCAPITALIZATION_NONE"/>
+				<View platform="ios" class="iosTextFieldUnderline"/>
+			</View>
+			<View class="handleItemContainer" id="handleLocalityContainer" layout="vertical">
+				<Label class="sectionItemKey" id="handleLocalityLabel"/>
+				<TextField class="fullWidthTextFieldWithKey" id="handleLocalityValue" onReturn="focusRegion" keyboardType="Titanium.UI.KEYBOARD_ASCII" autocapitalization="Titanium.UI.TEXT_AUTOCAPITALIZATION_NONE"/>
+				<View platform="ios" class="iosTextFieldUnderline"/>
+			</View>
+			<View class="handleItemContainer" id="handleRegionContainer" layout="vertical">
+				<Label class="sectionItemKey" id="handleRegionLabel"/>
+				<TextField class="fullWidthTextFieldWithKey" id="handleRegionValue" onReturn="focusPostCode" keyboardType="Titanium.UI.KEYBOARD_ASCII" autocapitalization="Titanium.UI.TEXT_AUTOCAPITALIZATION_NONE"/>
+				<View platform="ios" class="iosTextFieldUnderline"/>
+			</View>
+			<View class="handleItemContainer" id="handlePostCodeContainer" layout="vertical">
+				<Label class="sectionItemKey" id="handlePostCodeLabel"/>
+				<TextField class="fullWidthTextFieldWithKey" id="handlePostCodeValue" keyboardType="Titanium.UI.KEYBOARD_ASCII" autocapitalization="Titanium.UI.TEXT_AUTOCAPITALIZATION_NONE"/>
+				<View platform="ios" class="iosTextFieldUnderline"/>
+			</View>
+			<View class="handleItemContainer" id="handleCountryContainer" layout="vertical">
+				<Label class="sectionItemKey" id="handleCountryLabel"/>
+				<TextField class="fullWidthTextFieldWithKey" id="handleCountryValue" onClick="selectCountry" editable="false"/>
+				<View platform="ios" class="iosTextFieldUnderline"/>
+			</View>
+			<View class="screenButton" id="saveHandleButton" onClick="saveHandle" visible="true">
+				<Label class="screenButtonLabel" id="saveHandleButtonLabel" touchEnabled="false"/>
+			</View>
+			<View class="screenButton" id="deleteHandleButton" onClick="deleteHandle" visible="false">
+				<Label class="screenButtonLabel" id="deleteHandleButtonLabel" touchEnabled="false"/>
+			</View>
+		</ScrollView>
+    </Window>
+</Alloy>

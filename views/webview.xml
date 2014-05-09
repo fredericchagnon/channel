@@ -1,0 +1,13 @@
+<Alloy>
+	<Window id="webviewWindow" fullscreen="false" navBarHidden="false" layout="vertical">
+		<View platform="ios" class="statusBar" id="statusBar"/>
+		<View platform="ios" class="navBar">
+			<ImageView id="appicon"/>
+			<Label class="navBarTitle" id="navBarTitle"/>
+			<View class="rightNavbarButton" onClick="closeWebviewWindow">
+				<ImageView id="ic_navigation_cancel" class="ios_navigation_icon" image="ic_navigation_cancel.png" touchEnabled="false"/>
+			</View>
+		</View>
+		<WebView id="webview" class="container"/>
+	</Window>
+</Alloy>

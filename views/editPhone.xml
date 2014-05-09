@@ -1,0 +1,34 @@
+<Alloy>
+    <Window class="container" id="editPhoneWindow" fullscreen="false" navBarHidden="false" layout="vertical">
+		<View platform="ios" class="statusBar" id="statusBar"/>
+		<View platform="ios" class="navBar">
+			<View class="leftNavbarButton" onClick="closeEditPhoneWindow">
+				<ImageView id="ic_navigation_cancel" class="ios_navigation_icon" image="ic_navigation_cancel.png" touchEnabled="false"/>
+			</View>
+			<Label class="navBarTitle" id="navBarTitle"/>
+		</View>
+		<View class="container" id="editPhoneView" layout="vertical">
+			<View class="handleItemContainer" id="phoneNameContainer" layout="vertical">
+				<Label class="sectionItemKey" id="phoneNameLabel"/>
+				<TextField class="fullWidthTextFieldWithKey" id="phoneNameValue" onReturn="focusValue" keyboardType="Titanium.UI.KEYBOARD_ASCII" autocapitalization="Titanium.UI.TEXT_AUTOCAPITALIZATION_NONE" autocorrect="false"/>
+				<View platform="ios" class="iosTextFieldUnderline"/>
+			</View>
+			<View class="handleItemContainer" id="phoneCountryCodeContainer" layout="vertical">
+				<Label class="sectionItemKey" id="phoneCountryCodeLabel"/>
+				<TextField class="fullWidthTextFieldWithKey" id="phoneCountryCodeValue" onFocus="selectCountryCode" onClick="selectCountryCode" editable="false"/>
+				<View platform="ios" class="iosTextFieldUnderline"/>
+			</View>
+			<View class="handleItemContainer" id="phoneValueContainer" layout="vertical">
+				<Label class="sectionItemKey" id="phoneValueLabel"/>
+				<TextField class="fullWidthTextFieldWithKey" id="phoneValueValue" onReturn="savePhone" keyboardType="Titanium.UI.KEYBOARD_Phone" autocapitalization="Titanium.UI.TEXT_AUTOCAPITALIZATION_NONE" autocorrect="false"/>
+				<View platform="ios" class="iosTextFieldUnderline"/>
+			</View>
+			<View class="screenButton" id="savePhoneButton" onClick="savePhone" visible="true">
+				<Label class="screenButtonLabel" id="savePhoneButtonLabel" touchEnabled="false"/>
+			</View>
+			<View class="screenButton" id="deletePhoneButton" onClick="deletePhone" visible="false">
+				<Label class="screenButtonLabel" id="deletePhoneButtonLabel" touchEnabled="false"/>
+			</View>
+		</View>
+    </Window>
+</Alloy>

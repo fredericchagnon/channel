@@ -1,0 +1,94 @@
+<Alloy>
+	<Window platform="ios" id="contactsWindow" fullscreen="false" navBarHidden="false" layout="vertical">
+		<View platform="ios" class="statusBar" id="statusBar"/>
+		<View platform="ios" class="navBar">
+			<View class="leftNavbarButton" id="settingsNavBarButton" bubbleParent="false">
+				<ImageView id="ic_action_settings" touchEnabled="false" class="ios_navigation_icon" image="ic_action_settings.png"/>
+				<ImageView class="navBarMenuArrow" id="settingsMenuArrow" touchEnabled="false"/>
+			</View>
+			<View class="navBarCenterPicker" id="contactGroupNavBarButton" bubbleParent="false">
+				<Label class="navBarCenterTitle" id="navBarCenterTitle" touchEnabled="false"/>
+				<ImageView class="navBarMenuArrow" id="navBarMenuArrow" touchEnabled="false"/>
+			</View>
+			<View class="rightNavbarButton" id="connectNavBarButton" bubbleParent="false">
+				<ImageView id="ic_social_add_person" class="ios_navigation_icon" image="ic_social_add_person.png" touchEnabled="false"/>
+				<View id="connectBadgeContainer" class="navBarMenuBadge" touchEnabled="fasle">
+					<Label id="connectBadgeLabel" class="navBarMenuBadgeLabel" touchEnabled="false"/>
+				</View>
+				<ImageView class="navBarMenuArrow" id="connectMenuArrow" touchEnabled="false"/>
+			</View>
+			<View class="navBarTouchBlocker" id="navBarTouchBlocker" bubbleParent="false" touchEnabled="false">
+				<Label class="navBarCenterTitle" id="temporaryNavBarTitle" touchEnabled="false"/>
+			</View>
+		</View>
+		<View id="contactsViewContainer" class="container" backgroundColor="#FFFFFF" layout="absolute">
+			<View id="contactsView" layout="absolute"/>
+			<View class="shadeView" id="shadeView" layout="absolute">
+				<View id="editAvailabilityViewContainer" class="container" backgroundColor="#99000000" layout="absolute">
+					<View id="handleSelector" class="thisShadeView">
+						<TableView id="handleSelectorTable" class="handleSelectorTable"/>
+					</View>
+					<View id="editAvailabilityView" layout="vertical" width="Ti.UI.FILL" height="Ti.UI.SIZE">
+						<Label class="screenInstruction" id="newUserInstruction" opacity="0.0" width="Ti.UI.FILL" height="Ti.UI.SIZE"/>
+						<Label class="screenLabel" id="homeAvailabilityViewLabel" width="Ti.UI.FILL" height="Ti.UI.SIZE"/>
+						<View class="contactCardView" id="homeAvailabilityView" layout="absolute">
+							<ImageView class="contactCardAvatar" id="homeContactCardAvatar" onClick="editHomeAvatar" bubbleParent="false" defaultImage="images/avatar_camera.png"/>
+							<View class="contactCardInfo" id="homeContactCardInfo" onClick="editHomePersonaInfo" bubbleParent="false">
+								<Label class="contactCardNameLabel" id="homeContactCardNameLabel" touchEnabled="false"/>
+								<Label class="contactCardJobDeptLabel" id="homeContactCardJobDeptLabel" touchEnabled="false"/>
+							</View>
+							<View class="contactChannelContainer" id="homeContactChannelContainer">
+								<View class="primaryContactChannel" id="homePrimaryContactChannel" onClick="editPrimaryHomeContactChannel" bubbleParent="false">
+									<View class="contactChannelInnerContainer" touchEnabled="false">
+										<ImageView class="contactChannelActionImage" id="homePrimaryContactChannelActionImage" touchEnabled="false"/>
+										<Label class="contactChannelActionLabel" id="homePrimaryContactChannelActionLabel" touchEnabled="false"/>
+									</View>
+								</View>
+								<View class="secondaryContactChannel" id="homeSecondaryContactChannel" onClick="editSecondaryHomeContactChannel" bubbleParent="false">
+									<View class="contactChannelInnerContainer" touchEnabled="false">
+										<ImageView class="contactChannelActionImage" id="homeSecondaryContactChannelActionImage" touchEnabled="false"/>
+										<Label class="contactChannelActionLabel" id="homeSecondaryContactChannelActionLabel" touchEnabled="false"/>
+									</View>
+								</View>
+							</View>
+						</View>
+						<View width="Ti.UI.FILL" height="50dp" touchEnabled="false"/>
+						<Label class="screenLabel" id="workAvailabilityViewLabel" width="Ti.UI.FILL" height="Ti.UI.SIZE"/>
+						<View class="contactCardView" id="workAvailabilityView" layout="absolute">
+							<ImageView class="contactCardAvatar" id="workContactCardAvatar" onClick="editWorkAvatar" bubbleParent="false" defaultImage="images/avatar_camera.png"/>
+							<View class="contactCardInfo" id="workContactCardInfo" onClick="editWorkPersonaInfo" bubbleParent="false">
+								<Label class="contactCardNameLabel" id="workContactCardNameLabel" touchEnabled="false"/>
+								<Label class="contactCardJobDeptLabel" id="workContactCardJobDeptLabel" touchEnabled="false"/>
+							</View>
+							<View class="contactChannelContainer" id="workContactChannelContainer">
+								<View class="primaryContactChannel" id="workPrimaryContactChannel" onClick="editPrimaryWorkContactChannel" bubbleParent="false">
+									<View class="contactChannelInnerContainer" touchEnabled="false">
+										<ImageView class="contactChannelActionImage" id="workPrimaryContactChannelActionImage" touchEnabled="false"/>
+										<Label class="contactChannelActionLabel" id="workPrimaryContactChannelActionLabel" touchEnabled="false"/>
+									</View>
+								</View>
+								<View class="secondaryContactChannel" id="workSecondaryContactChannel" onClick="editSecondaryWorkContactChannel" bubbleParent="false">
+									<View class="contactChannelInnerContainer" touchEnabled="false">
+										<ImageView class="contactChannelActionImage" id="workSecondaryContactChannelActionImage" touchEnabled="false"/>
+										<Label class="contactChannelActionLabel" id="workSecondaryContactChannelActionLabel" touchEnabled="false"/>
+									</View>
+								</View>
+							</View>
+						</View>
+						<View width="Ti.UI.FILL" height="50dp" touchEnabled="false"/>
+					</View>
+				</View>
+		        <TableView id="settingsTable" height="180dp" scrollable="false" top="-180dp">
+		        	<TableViewRow id="contactHandlesSettingsRow" class="dropDownTableRow" leftImage="images/ic_table_manage.png" onClick="openManageHandles"/>
+		        	<TableViewRow id="deactivateAccountSettingsRow" class="dropDownTableRow" leftImage="images/ic_table_deactivate.png" onClick="deactivateAccount"/>
+		        	<TableViewRow id="logoutAccountSettingsRow" class="dropDownTableRow" leftImage="images/ic_table_logout.png" onClick="logoutAccount"/>		        </TableView>
+		        <TableView id="contactGroupSelectorTable" height="240dp" scrollable="false" onClick="selectContactGroup" top="-240dp"/>
+		        <TableView id="connectTable" height="120dp" scrollable="false" top="-120dp">
+		        	<TableViewRow id="connectRow" class="dropDownTableRow" leftImage="images/ic_table_search.png" onClick="openConnect"/>
+		        	<TableViewRow id="connectionRequestsRow" class="dropDownTableRow" leftImage="images/ic_table_incoming.png" onClick="openConnectionRequests"/>
+		        </TableView>
+			</View>
+			<ImageView zIndex="999999" id="availabilitySelector" width="90dp" height="60dp" bottom="10dp" image="images/ic_status.png" onClick="editAvailability"/>
+		</View>
+	</Window>
+</Alloy>

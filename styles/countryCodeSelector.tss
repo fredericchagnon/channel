@@ -1,0 +1,20 @@
+".countryCodeList": {
+	top: 0,
+	width: Ti.UI.FILL,
+	height: Ti.UI.FILL,
+},
+".countryName": {
+	left: '10dp',
+	right: '5dp',
+	color: '#555555',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	font: {
+		fontFamily: 'Open Sans',
+		fontSize: '18dp',
+		fontStyle: 'Condensed Light'
+	},
+},
+".countryItemContainer": {
+	height: '50dp',
+	width: Ti.UI.FILL,
+},

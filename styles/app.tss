@@ -1,0 +1,228 @@
+".container": {
+	backgroundColor:"#FFFFFF",
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+	font: {
+		fontFamily: 'Open Sans',
+		fontSize: '18dp',
+		fontStyle: 'Condensed Light'
+	}
+},
+".statusBar": {
+	top: '0dp',
+	height: '20dp',
+	width: Ti.UI.FILL,
+	backgroundColor: "#03458f",	
+},
+".navBar": {
+	top: '0dp',
+	height: '44dp',
+	width: Ti.UI.FILL,
+	backgroundColor: "#03458f",
+},
+".navBarTouchBlocker": {
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+	backgroundColor: 'transparent',	
+},
+".navBarTitle": {
+	color: "#FFFFFF",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	font: {
+		fontFamily: 'Open Sans Condensed',
+		fontSize: '22dp',
+		fontWeight: 'Bold'
+	}
+},
+".rightNavbarButton": {
+	top: '0dp',
+	right: '0dp',
+	height: '44dp',
+	width: '44dp',
+},
+".leftNavbarButton": {
+	top: '0dp',
+	left: '0dp',
+	height: '44dp',
+	width: '44dp',
+},
+".navBarMenuBadge": {
+	top: '6dp',
+	right: '6dp',
+	height: '14dp',
+	width: '15dp',
+	borderRadius: '7dp',
+	backgroundColor: "#FF0000",
+	opacity: 1.0,
+},
+".navBarMenuBadgeLabel": {
+	color: "#FFFFFF",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	font: {
+		fontFamily: 'Open Sans Condensed',
+		fontSize: '10dp',
+		fontWeight: 'Bold'
+	}
+},
+".ios_navigation_icon": {
+	height: '30dp',
+	width: '30dp',
+},
+".shadeView": {
+	top: '0dp',
+	left: '0dp',
+	right: '0dp',
+	bottom: '0dp',
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+	zIndex: 700,
+	backgroundColor: "#99000000",
+	opacity: 0.0,
+},
+".navBarCenterPicker": {
+	top: '0dp',
+	height: '44dp',
+	left: '44dp',
+	right: '44dp',
+},
+".navBarCenterTitle": {
+	color: '#FFFFFF',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	font: {
+		fontFamily: 'Open Sans Condensed',
+		fontSize: '22dp',
+		fontWeight: 'Bold'
+	}
+},
+".navBarMenuArrow": {
+	top: '0dp',
+	height: '44dp',
+	width: '44dp'
+},
+".screenInstruction": {
+	color: '#FFFFFF',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	font: {
+		fontFamily: 'Open Sans',
+		fontSize: '24dp',
+		fontStyle: 'Condensed Light'
+	}
+},
+".screenLabel": {
+	color: '#FFFFFF',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	font: {
+		fontFamily: 'Open Sans',
+		fontSize: '18dp',
+		fontStyle: 'Condensed Light'
+	}
+},
+".dropDownTableRow": {
+	height: '60dp',
+	width: Ti.UI.FILL,
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	color: '#555555',
+	font: {
+		fontFamily: 'Open Sans Condensed',
+		fontSize: '18dp',
+		fontWeight: 'Bold'
+	},	
+},
+".fullWidthTextField": {
+	top: '10dp',
+	left: '5dp',
+	right: '5dp',
+	bottom: '0dp',
+	height: '50dp',
+	paddingLeft: '5dp',
+	paddingRight: '5dp',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT,
+	font: {
+		fontFamily: 'Open Sans',
+		fontSize: '18dp',
+		fontStyle: 'Condensed Light'
+	}
+},
+".fullWidthTextFieldWithKey": {
+	top: '10dp',
+	left: '5dp',
+	right: '5dp',
+	bottom: '0dp',
+	height: '50dp',
+	paddingLeft: '5dp',
+	paddingRight: '5dp',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT,
+	font: {
+		fontFamily: 'Open Sans',
+		fontSize: '18dp',
+		fontStyle: 'Condensed Light'
+	}
+},
+".iosTextFieldUnderline": {
+	top: '-10dp',
+	left: '5dp',
+	right: '5dp',
+	height: '1dp',
+	backgroundColor: '#25000000',
+}
+".screenButton": {
+	top: '15dp',
+	height: '60dp',
+	left: '5dp',
+	right: '5dp',
+	bottom: '5dp',
+},
+".screenButtonLabel": {
+	color: "#FFFFFF",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	font: {
+		fontFamily: 'Open Sans Condensed',
+		fontSize: '22dp',
+		fontStyle: 'Bold'
+	}
+},
+".picker": {
+	right: '0dp',
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+	font: {
+		fontFamily: 'Open Sans Condensed',
+		fontSize: '16dp',
+		fontStyle: 'Bold'
+	},	
+},
+".handleItemContainer": {
+	height: Ti.UI.SIZE,
+	width: Ti.UI.FILL,
+},
+".sectionItemKey": {
+	bottom: '-20dp',
+	left: '10dp',
+	height: '25dp',
+	width: Ti.UI.FILL,	
+	color: "#75000000",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	verticalAlign: Titanium.UI.TEXT_VERTICAL_ALIGNMENT_BOTTOM,
+	font: {
+		fontFamily: 'Open Sans Condensed',
+		fontSize: '12dp',
+		fontWeight: 'Bold'
+	},
+},
+".contactHandleName": {
+	left: '60dp',
+	right: '5dp',
+	color: '#555555',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	font: {
+		fontFamily: 'Open Sans Condensed',
+		fontSize: '18dp',
+		fontWeight: 'Bold'
+	},
+},
+".contactHandleImage": {
+	top: '5dp',
+	left: '5dp',
+	height: '50dp',
+	width: '50dp',
+},

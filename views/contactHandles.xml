@@ -1,0 +1,26 @@
+<Alloy>
+    <Collection src="contact_handles"/>
+    <Window class="container" id="contactHandlesWindow" fullscreen="false" navBarHidden="false" layout="vertical">
+		<View platform="ios" class="statusBar" id="statusBar"/>
+		<View platform="ios" class="navBar">
+			<View class="leftNavbarButton" id="cancelNavBarButton" onClick="closeContactHandlesWindow">
+				<ImageView id="ic_navigation_cancel" class="ios_navigation_icon" image="ic_navigation_cancel.png" touchEnabled="false"/>
+			</View>
+			<Label class="navBarTitle" id="navBarTitle"/>
+			<View class="rightNavbarButton" id="addNavBarButton" onClick="newContactHandle">
+				<ImageView id="ic_content_new" class="ios_navigation_icon" image="ic_content_new.png" touchEnabled="false"/>
+				<ImageView class="navBarMenuArrow" id="addMenuArrow" touchEnabled="false"/>
+			</View>
+			<View class="navBarTouchBlocker" id="navBarTouchBlocker" bubbleParent="false" touchEnabled="false"/>
+		</View>
+		<ScrollView id="contactHandlesView" class="container" layout="absolute" touchEnabled="true">
+	        <TableView dataCollection="contact_handles" dataTransform="transformFunction" onClick="openContactHandle" top="0dp">
+	            <!-- <TableViewRow class="contactHandleRow" hasChild="true" title="{name}" handle_id="{id}" leftImage="{contactHandleImage}"/> -->
+	            <TableViewRow class="contactHandleRow" hasChild="true" handle_id="{id}">
+	            	<ImageView class="contactHandleImage" image="{image}"/>
+	            	<Label class="contactHandleName" text="{name}"/>
+	            </TableViewRow>
+	        </TableView>
+		</ScrollView>
+    </Window>
+</Alloy>

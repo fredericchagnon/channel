@@ -1,0 +1,46 @@
+<Alloy>
+    <Window class="container" id="newContactHandleWindow" fullscreen="false" navBarHidden="false" layout="vertical">
+		<View platform="ios" class="statusBar" id="statusBar"/>
+		<View platform="ios" class="navBar">
+			<View class="leftNavbarButton" id="cancelNavBarButton" onClick="closeNewContactHandleWindow">
+				<ImageView id="ic_navigation_cancel" class="ios_navigation_icon" image="ic_navigation_cancel.png" touchEnabled="false"/>
+			</View>
+			<Label class="navBarTitle" id="navBarTitle"/>
+			<View class="navBarTouchBlocker" id="navBarTouchBlocker" bubbleParent="false" touchEnabled="false"/>
+		</View>
+		<View id="newContactHandleView" class="container" layout="absolute" touchEnabled="true">
+	        <TableView onClick="selectContactHandleType" top="0dp">
+<!-- 	            <TableViewRow class="contactHandleTypeRow" hasChild="true" id="mobile" handleType="mobile" leftImage="images/ic_handles_mobile.png"/>
+	            <TableViewRow class="contactHandleTypeRow" hasChild="true" id="phone" handleType="phone" leftImage="images/ic_handles_phone.png"/>
+	            <TableViewRow class="contactHandleTypeRow" hasChild="true" id="email" handleType="email" leftImage="images/ic_handles_email.png"/>
+	            <TableViewRow class="contactHandleTypeRow" hasChild="true" id="skype" handleType="skype" leftImage="images/ic_handles_skype.png"/>
+	            <TableViewRow class="contactHandleTypeRow" hasChild="true" id="post" handleType="post" leftImage="images/ic_handles_post.png"/> -->
+	            <TableViewRow class="contactHandleTypeRow" hasChild="true" id="mobile" handleType="mobile">
+	            	<ImageView platform="ios" class="contactHandleImage" image="images/ic_handles_mobile.png"/>
+	            	<ImageView platform="android" class="contactHandleImage" image="/images/ic_handles_mobile.png"/>
+	            	<Label class="contactHandleName" id="mobileName"/>
+	            </TableViewRow>
+	            <TableViewRow class="contactHandleTypeRow" hasChild="true" id="phone" handleType="phone">
+	            	<ImageView platform="ios" class="contactHandleImage" image="images/ic_handles_phone.png"/>
+	            	<ImageView platform="android" class="contactHandleImage" image="/images/ic_handles_phone.png"/>
+	            	<Label class="contactHandleName" id="phoneName"/>
+	            </TableViewRow>
+	            <TableViewRow class="contactHandleTypeRow" hasChild="true" id="email" handleType="email">
+	            	<ImageView platform="ios" class="contactHandleImage" image="images/ic_handles_email.png"/>
+	            	<ImageView platform="android" class="contactHandleImage" image="/images/ic_handles_email.png"/>
+	            	<Label class="contactHandleName" id="emailName"/>
+	            </TableViewRow>
+	            <TableViewRow class="contactHandleTypeRow" hasChild="true" id="skype" handleType="skype">
+	            	<ImageView platform="ios" class="contactHandleImage" image="images/ic_handles_skype.png"/>
+	            	<ImageView platform="android" class="contactHandleImage" image="/images/ic_handles_skype.png"/>
+	            	<Label class="contactHandleName" id="skypeName"/>
+	            </TableViewRow>
+<!-- 	            <TableViewRow class="contactHandleTypeRow" hasChild="true" id="post" handleType="post">
+	            	<ImageView platform="ios" class="contactHandleImage" image="images/ic_handles_post.png"/>
+	            	<ImageView platform="android" class="contactHandleImage" image="/images/ic_handles_post.png"/>
+	            	<Label class="contactHandleName" id="postName"/>
+	            </TableViewRow> -->
+	        </TableView>
+		</View>
+    </Window>
+</Alloy>

@@ -1,0 +1,14 @@
+"#prefixLabel": {text: L('prefix_field')},
+"#firstNameLabel": {text: L('first_name')},
+"#middleNameLabel": {text: L('middle_name')},
+"#lastNameLabel": {text: L('last_name')},
+"#suffixLabel": {text: L('suffix')},
+"#jobTitleLabel": {text: L('job_title')},
+"#departmentLabel": {text: L('department')},
+"#companyLabel": {text: L('company')},
+"#savePersonaButton": {
+	backgroundColor: "#53A93F",
+},
+"#savePersonaButtonLabel": {
+	text: L('save'),
+},

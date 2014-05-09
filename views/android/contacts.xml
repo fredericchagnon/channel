@@ -1,0 +1,10 @@
+<Alloy>
+	<Window platform="android" id="contactsWindow" exitOnClose="true" fullscreen="false" navBarHidden="false" layout="absolute">
+		<View id="contactGroupPickerView" class="pickerContainer">
+			<Label id="contactGroupPickerLabel" class="pickerLabel"/>
+			<Picker id="contactGroupPicker" class="picker" selectionIndicator="true" onChange="selectContactGroup"/>
+		</View>
+		<View id="contactsView" class="container">
+		</View>
+	</Window>
+</Alloy>

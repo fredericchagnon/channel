@@ -1,0 +1,29 @@
+<Alloy>
+    <Window class="container" id="editSkypeWindow" fullscreen="false" navBarHidden="false" layout="vertical">
+		<View platform="ios" class="statusBar" id="statusBar"/>
+		<View platform="ios" class="navBar">
+			<View class="leftNavbarButton" onClick="closeEditSkypeWindow">
+				<ImageView id="ic_navigation_cancel" class="ios_navigation_icon" image="ic_navigation_cancel.png" touchEnabled="false"/>
+			</View>
+			<Label class="navBarTitle" id="navBarTitle"/>
+		</View>
+		<View class="container" id="editSkypeView" layout="vertical">
+			<View class="handleItemContainer" id="skypeNameContainer" layout="vertical">
+				<Label class="sectionItemKey" id="skypeNameLabel"/>
+				<TextField class="fullWidthTextFieldWithKey" id="skypeNameValue" onReturn="focusValue" keyboardType="Titanium.UI.KEYBOARD_ASCII" autocapitalization="Titanium.UI.TEXT_AUTOCAPITALIZATION_NONE" autocorrect="false"/>
+				<View platform="ios" class="iosTextFieldUnderline"/>
+			</View>
+			<View class="handleItemContainer" id="skypeValueContainer" layout="vertical">
+				<Label class="sectionItemKey" id="skypeValueLabel"/>
+				<TextField class="fullWidthTextFieldWithKey" id="skypeValueValue" onReturn="saveSkype" keyboardType="Titanium.UI.KEYBOARD_EMAIL" autocapitalization="Titanium.UI.TEXT_AUTOCAPITALIZATION_NONE" autocorrect="false"/>
+				<View platform="ios" class="iosTextFieldUnderline"/>
+			</View>
+			<View class="screenButton" id="saveSkypeButton" onClick="saveSkype" visible="true">
+				<Label class="screenButtonLabel" id="saveSkypeButtonLabel" touchEnabled="false"/>
+			</View>
+			<View class="screenButton" id="deleteSkypeButton" onClick="deleteSkype" visible="false">
+				<Label class="screenButtonLabel" id="deleteSkypeButtonLabel" touchEnabled="false"/>
+			</View>
+		</View>
+    </Window>
+</Alloy>

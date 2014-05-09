@@ -1,0 +1,23 @@
+<Alloy>
+    <Window class="container" id="connectWindow" fullscreen="false" navBarHidden="false" layout="vertical">
+		<View platform="ios" class="statusBar" id="statusBar"/>
+		<View platform="ios" class="navBar">
+			<View class="leftNavbarButton" id="cancelNavBarButton" onClick="closeConnectWindow">
+				<ImageView id="ic_navigation_cancel" class="ios_navigation_icon" image="ic_navigation_cancel.png" touchEnabled="false"/>
+			</View>
+			<Label class="navBarTitle" id="navBarTitle"/>
+			<View class="navBarTouchBlocker" id="navBarTouchBlocker" bubbleParent="false" touchEnabled="false"/>
+		</View>
+		<View id="connectView" class="container" layout="vertical" touchEnabled="true">
+			<View class="handleItemContainer" id="searchContainer" layout="vertical">
+				<Label class="sectionItemKey" id="searchLabel"/>
+				<View class="handleItemContainer" layout="absolute">
+					<TextField class="fullWidthTextFieldWithKey" id="searchValue" onReturn="searchCloud" onChange="activateSearchCancelButton" keyboardType="Titanium.UI.KEYBOARD_ASCII" autocapitalization="Titanium.UI.TEXT_AUTOCAPITALIZATION_NONE" autocorrect="false" returnKeyType="Titanium.UI.RETURNKEY_SEARCH" right="50dp" />
+					<Button class="searchCancelButton" id="searchCancelButton" onClick="cancelSearch"/>
+					<View platform="ios" class="iosTextFieldUnderline" top="50dp"/>
+				</View>
+			</View>
+			<TableView id="searchResultsTable" onClick="groupConnection" visible="false"/>
+		</View>
+    </Window>
+</Alloy>

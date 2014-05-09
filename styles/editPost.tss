@@ -1,0 +1,19 @@
+"#handleNameLabel": {text: L('name_label')},
+"#handleStreet1Label": {text: L('street_address')},
+"#handleStreet2Label": {text: L('street_address_2')},
+"#handleLocalityLabel": {text: L('locality')},
+"#handleRegionLabel": {text: L('region')},
+"#handlePostCodeLabel": {text: L('postal_code')},
+"#handleCountryLabel": {text: L('country_label')},
+"#deleteHandleButton": {
+	backgroundColor: "#FF5859",
+},
+"#saveHandleButton": {
+	backgroundColor: "#53A93F",
+},
+"#deleteHandleButtonLabel": {
+	text: L('delete'),
+},
+"#saveHandleButtonLabel": {
+	text: L('save'),
+},

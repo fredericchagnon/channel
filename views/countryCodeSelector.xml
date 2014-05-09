@@ -1,0 +1,27 @@
+<Alloy>
+	<Window class="container"  id="countryCodeSelectorWindow" fullscreen="false" navBarHidden="false" layout="vertical">
+		<View platform="ios" class="statusBar" id="statusBar"/>
+		<View platform="ios" class="navBar">
+			<View class="leftNavbarButton" onClick="closeCountryCodeSelectorWindow">
+				<ImageView id="ic_navigation_cancel" class="ios_navigation_icon" image="ic_navigation_cancel.png" touchEnabled="false"/>
+			</View>
+			<Label class="navBarTitle" id="navBarTitle"/>
+		</View>
+		<ScrollView class="container" layout="absolute" touchEnabled="true">
+	        <TableView id="countryCodeList" onClick="selectCountry" top="0dp"/>
+		</ScrollView>
+<!-- 	    <ListView id="countryCodeList" class="countryCodeList" defaultItemTemplate="countryItem">
+	        <Templates>
+	            <ItemTemplate  id="countryItem" name="countryItem" class="countryItem" onClick="selectCountry">
+                    <Label id="countryName" bindId="countryName" class="countryName"/>
+	            	<View bindId="countryItemContainer" id="countryItemContainer" class="countryItemContainer">
+	                    <Label id="countryName" bindId="countryName" class="countryName"/>
+					</View>
+	            </ItemTemplate>
+	        </Templates>
+	        <ListSection id="section" >
+	            <ListItem template="countryItem" />
+	        </ListSection>
+	    </ListView> -->
+	</Window>
+</Alloy>

@@ -1,0 +1,29 @@
+<Alloy>
+    <Window class="container" id="editEmailWindow" fullscreen="false" navBarHidden="false" layout="vertical">
+		<View platform="ios" class="statusBar" id="statusBar"/>
+		<View platform="ios" class="navBar">
+			<View class="leftNavbarButton" onClick="closeEditEmailWindow">
+				<ImageView id="ic_navigation_cancel" class="ios_navigation_icon" image="ic_navigation_cancel.png" touchEnabled="false"/>
+			</View>
+			<Label class="navBarTitle" id="navBarTitle"/>
+		</View>
+		<View class="container" id="editEmailView" layout="vertical">
+			<View class="handleItemContainer" id="emailNameContainer" layout="vertical">
+				<Label class="sectionItemKey" id="emailNameLabel"/>
+				<TextField class="fullWidthTextFieldWithKey" id="emailNameValue" onReturn="focusValue" keyboardType="Titanium.UI.KEYBOARD_ASCII" autocapitalization="Titanium.UI.TEXT_AUTOCAPITALIZATION_NONE" autocorrect="false"/>
+				<View platform="ios" class="iosTextFieldUnderline"/>
+			</View>
+			<View class="handleItemContainer" id="emailValueContainer" layout="vertical">
+				<Label class="sectionItemKey" id="emailValueLabel"/>
+				<TextField class="fullWidthTextFieldWithKey" id="emailValueValue" onReturn="saveEmail" keyboardType="Titanium.UI.KEYBOARD_EMAIL" autocapitalization="Titanium.UI.TEXT_AUTOCAPITALIZATION_NONE" autocorrect="false"/>
+				<View platform="ios" class="iosTextFieldUnderline"/>
+			</View>
+			<View class="screenButton" id="saveEmailButton" onClick="saveEmail" visible="true">
+				<Label class="screenButtonLabel" id="saveEmailButtonLabel" touchEnabled="false"/>
+			</View>
+			<View class="screenButton" id="deleteEmailButton" onClick="deleteEmail" visible="false">
+				<Label class="screenButtonLabel" id="deleteEmailButtonLabel" touchEnabled="false"/>
+			</View>
+		</View>
+    </Window>
+</Alloy>

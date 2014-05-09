@@ -1,0 +1,32 @@
+"#newContactHandleView": {
+	top: '0dp',
+	height: Ti.UI.SIZE,
+	width: Ti.UI.FILL,
+},
+".contactHandleTypeRow": {
+	hadChild: true,
+	width: Ti.UI.FILL,
+	height: '60dp',
+	backgroundColor: '#FFF',
+	color: '#555555',
+	font: {
+		fontFamily: 'Open Sans Condensed',
+		fontSize: '18dp',
+		fontWeight: 'Bold'
+	}
+},
+"#mobileName": {
+	text: L('mobile'),
+},
+"#phoneName": {
+	text: L('phone'),
+},
+"#emailName": {
+	text: L('email'),
+},
+"#skypeName": {
+	text: L('skype'),
+},
+"#postName": {
+	text: L('post'),
+}

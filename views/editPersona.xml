@@ -1,0 +1,56 @@
+<Alloy>
+    <Window class="container" id="editPersonaWindow" fullscreen="false" navBarHidden="false" layout="vertical">
+		<View platform="ios" class="statusBar" id="statusBar"/>
+		<View platform="ios" class="navBar">
+			<View class="leftNavbarButton" onClick="closeEditPersonaWindow">
+				<ImageView id="ic_navigation_cancel" class="ios_navigation_icon" image="ic_navigation_cancel.png" touchEnabled="false"/>
+			</View>
+			<Label class="navBarTitle" id="navBarTitle"/>
+		</View>
+		<ScrollView class="container" id="editPersonaView" layout="vertical">
+			<View class="handleItemContainer" id="prefixContainer" layout="vertical">
+				<Label class="sectionItemKey" id="prefixLabel"/>
+				<TextField class="fullWidthTextFieldWithKey" id="prefixValue" onReturn="focusFirstName" keyboardType="Titanium.UI.KEYBOARD_ASCII" autocapitalization="Titanium.UI.TEXT_AUTOCAPITALIZATION_NONE" autocorrect="false"/>
+				<View platform="ios" class="iosTextFieldUnderline"/>
+			</View>
+			<View class="handleItemContainer" id="firstNameContainer" layout="vertical">
+				<Label class="sectionItemKey" id="firstNameLabel"/>
+				<TextField class="fullWidthTextFieldWithKey" id="firstNameValue" onReturn="focusMiddleName" keyboardType="Titanium.UI.KEYBOARD_ASCII" autocapitalization="Titanium.UI.TEXT_AUTOCAPITALIZATION_NONE" autocorrect="false"/>
+				<View platform="ios" class="iosTextFieldUnderline"/>
+			</View>
+			<View class="handleItemContainer" id="middleNameContainer" layout="vertical">
+				<Label class="sectionItemKey" id="middleNameLabel"/>
+				<TextField class="fullWidthTextFieldWithKey" id="middleNameValue" onReturn="focusLastName" keyboardType="Titanium.UI.KEYBOARD_ASCII" autocapitalization="Titanium.UI.TEXT_AUTOCAPITALIZATION_NONE" autocorrect="false"/>
+				<View platform="ios" class="iosTextFieldUnderline"/>
+			</View>
+			<View class="handleItemContainer" id="lastNameContainer" layout="vertical">
+				<Label class="sectionItemKey" id="lastNameLabel"/>
+				<TextField class="fullWidthTextFieldWithKey" id="lastNameValue" onReturn="focusSuffix" keyboardType="Titanium.UI.KEYBOARD_ASCII" autocapitalization="Titanium.UI.TEXT_AUTOCAPITALIZATION_NONE" autocorrect="false"/>
+				<View platform="ios" class="iosTextFieldUnderline"/>
+			</View>
+			<View class="handleItemContainer" id="suffixContainer" layout="vertical">
+				<Label class="sectionItemKey" id="suffixLabel"/>
+				<TextField class="fullWidthTextFieldWithKey" id="suffixValue" onReturn="focusJobTitle" keyboardType="Titanium.UI.KEYBOARD_ASCII" autocapitalization="Titanium.UI.TEXT_AUTOCAPITALIZATION_NONE" autocorrect="false"/>
+				<View platform="ios" class="iosTextFieldUnderline"/>
+			</View>
+			<View class="handleItemContainer" id="jobTitleContainer" layout="vertical">
+				<Label class="sectionItemKey" id="jobTitleLabel"/>
+				<TextField class="fullWidthTextFieldWithKey" id="jobTitleValue" onReturn="focusDepartment" keyboardType="Titanium.UI.KEYBOARD_ASCII" autocapitalization="Titanium.UI.TEXT_AUTOCAPITALIZATION_NONE" autocorrect="false"/>
+				<View platform="ios" class="iosTextFieldUnderline"/>
+			</View>
+			<View class="handleItemContainer" id="departmentContainer" layout="vertical">
+				<Label class="sectionItemKey" id="departmentLabel"/>
+				<TextField class="fullWidthTextFieldWithKey" id="departmentValue" keyboardType="Titanium.UI.KEYBOARD_ASCII" autocapitalization="Titanium.UI.TEXT_AUTOCAPITALIZATION_NONE" autocorrect="false"/>
+				<View platform="ios" class="iosTextFieldUnderline"/>
+			</View>
+			<View class="handleItemContainer" id="companyContainer" layout="vertical">
+				<Label class="sectionItemKey" id="companyLabel"/>
+				<TextField class="fullWidthTextFieldWithKey" id="companyValue" keyboardType="Titanium.UI.KEYBOARD_ASCII" autocapitalization="Titanium.UI.TEXT_AUTOCAPITALIZATION_NONE" autocorrect="false"/>
+				<View platform="ios" class="iosTextFieldUnderline"/>
+			</View>
+			<View class="screenButton" id="savePersonaButton" onClick="savePersona" visible="true">
+				<Label class="screenButtonLabel" id="savePersonaButtonLabel" touchEnabled="false"/>
+			</View>
+		</ScrollView>
+    </Window>
+</Alloy>

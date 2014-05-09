@@ -1,0 +1,17 @@
+"#phoneNameLabel": {text: L('name_label')},
+"#phoneValueLabel": {text: L('phone_number')},
+"#phoneCountryCodeLabel": {text: L('country_code_label')},
+"#phoneNameValue": {hintText: L('')},
+"#phoneValueValue": {hintText: L('')},
+"#deletePhoneButton": {
+	backgroundColor: "#FF5859",
+},
+"#savePhoneButton": {
+	backgroundColor: "#53A93F",
+},
+"#deletePhoneButtonLabel": {
+	text: L('delete'),
+},
+"#savePhoneButtonLabel": {
+	text: L('save'),
+},

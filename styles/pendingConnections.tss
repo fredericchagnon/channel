@@ -1,0 +1,17 @@
+"#navBarTitle": {
+	text: L('connection_requests'),
+},
+".incomingRequestsRow": {
+	height: '60dp',
+	color: '#000000',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	color: '#555555',
+	font: {
+		fontFamily: 'Open Sans',
+		fontSize: '18dp',
+		fontStyle: 'Condensed Light'
+	},	
+},
+"#emptyPendingConnectionsLabel": {
+	text: L('empty_requests'),
+}

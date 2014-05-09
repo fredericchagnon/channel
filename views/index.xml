@@ -1,0 +1,59 @@
+<Alloy>
+	<Window id="indexWindow" fullscreen="false" navBarHidden="false" layout="vertical">
+		<View platform="ios" class="statusBar" id="statusBar"/>
+		<View platform="ios" class="navBar">
+			<ImageView id="appicon_long"/>
+<!-- 			<View class="rightNavbarButton" onClick="openInfoWindow">
+				<ImageView id="ic_action_about" class="ios_navigation_icon" image="ic_action_about.png" touchEnabled="false"/>
+			</View> -->
+		</View>
+ 		<View class="container" id="container" layout="vertical">
+	        <ScrollableView class="fieldsSectionView" id="scrollableView" showPagingControl="false" onScrollend="blurAllFields">
+	        	<View class="fieldsSectionView" id="signupFieldsSectionView"  onClick="blurSignupFields">
+					<View class="fields" id="signupFields" layout="vertical" bubbleParent="false">
+						<TextField class="fullWidthTextField" id="signupName" onReturn="focusSignupEmail" keyboardType="Titanium.UI.KEYBOARD_ASCII" autocapitalization="TEXT_AUTOCAPITALIZATION_WORDS" autocorrect="false"/>
+						<View platform="ios" class="iosTextFieldUnderline"/>
+						<TextField class="fullWidthTextField" id="signupEmail" onReturn="focusSignupPhone" keyboardType="Titanium.UI.KEYBOARD_EMAIL" autocapitalization="Titanium.UI.TEXT_AUTOCAPITALIZATION_NONE" autocorrect="false"/>
+						<View platform="ios" class="iosTextFieldUnderline"/>
+						<TextField class="fullWidthTextField" id="signupPhone" onReturn="signup" keyboardType="Titanium.UI.KEYBOARD_NUMBERS_PUNCTUATION" autocorrect="false"/>
+						<View platform="ios" class="iosTextFieldUnderline"/>
+<!-- 						<Button class="screenButton" id="signupButton" onClick="signup"/> -->
+						<View class="screenButton" id="signupButton" onClick="signup">
+							<Label class="screenButtonLabel" id="signupButtonLabel" touchEnabled="false"/>
+						</View>
+						<Label class="screenLink" id="terms" onClick="openTermsUrl"/>
+					</View>
+					<View class="authenticateOptionSwipe">
+						<Label class="screenLabel" id="swipeToSignin"/>
+					</View>
+				</View>
+				<View id='fieldsSectionView' id="signinFieldsSectionView" class="fieldsSectionView" onClick="blurSigninFields">
+					<View class="fields" id="signinFields" layout="vertical" bubbleParent="false">
+						<TextField class="fullWidthTextField" id="signinEmail" onReturn="focusSigninPassword" keyboardType="Titanium.UI.KEYBOARD_EMAIL" autocapitalization="Titanium.UI.TEXT_AUTOCAPITALIZATION_NONE" autocorrect="false"/>
+						<View platform="ios" class="iosTextFieldUnderline"/>
+						<TextField class="fullWidthTextField" id="signinPassword" passwordMask="true" onReturn="signin" keyboardType="Titanium.UI.KEYBOARD_DEFAULT"/>
+						<View platform="ios" class="iosTextFieldUnderline"/>
+						<!-- <Button class="screenButton" id="signinButton" onClick="signin"/> -->
+						<View class="screenButton" id="signinButton" onClick="signin">
+							<Label class="screenButtonLabel" id="signinButtonLabel" touchEnabled="false"/>
+						</View>
+						<Label class="screenLink" id="forgottenPassword" onClick="resetPassword"/>
+					</View>
+					<View class="authenticateOptionSwipe">
+						<Label class="screenLabel" id="swipeToSignup"/>
+					</View>
+				</View>
+	        </ScrollableView>
+	        <View id="oathenticateButtonsView">
+				<!-- <Button class="halfFlushButton" id="facebookButton" onClick="facebookOauthicate"/> -->
+				<!-- <Button class="halfFlushButton" id="googleButton" onClick="googleOauthicate"/> -->
+				<View class="halfFlushButton" id="facebookButton" onClick="facebookOauthicate">
+					<Label class="halfFlushButtonLabel" id="facebookButtonLabel" touchEnabled="false"/>
+				</View>
+				<View class="halfFlushButton" id="googleButton" onClick="googleOauthicate">
+					<Label class="halfFlushButtonLabel" id="googleButtonLabel" touchEnabled="false"/>
+				</View>
+			</View>
+		</View>
+	</Window>
+</Alloy>

@@ -1,0 +1,22 @@
+"#navBarTitle": {
+	text: L('connect'),
+},
+"#searchLabel": {text: L('search_cloud')},
+"#searchValue": {hintText: L('contact_search_hinttext')},
+".searchCancelButton": {
+	top: '25dp',
+	right: '10dp',
+	height: '20dp',
+	width: '40dp',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	font: {
+		fontFamily: 'Open Sans Condensed',
+		fontSize: '10dp',
+		fontWeigth: 'Bold'
+	}
+},
+"#searchCancelButton": {
+	backgroundColor: "#50333333",
+	color: "#50FFFFFF",
+	titleid: 'cancel',
+},

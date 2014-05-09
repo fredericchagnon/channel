@@ -1,0 +1,7 @@
+"#webviewWindow": {
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+},
+"#webview": {
+	scalesPageToFit: true,	
+},

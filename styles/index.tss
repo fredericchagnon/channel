@@ -1,0 +1,130 @@
+"#indexWindow": {
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+},
+"#appicon_long": {
+	height: '32dp',
+	width: Ti.UI.SIZE,
+	image: 'appicon_long.png'	
+},
+"#navbarInfoButton": {
+	top: '0dp',
+	right: '0dp',
+	height: '48dp',
+	width: '48dp',
+},
+".fieldsSectionView": {
+	width: Ti.UI.FILL,
+	height: Alloy.CFG.authenticateHeight,
+},
+".fields": {
+	top: '0dp',
+	width: Ti.UI.FILL,
+	height: Ti.UI.SIZE,
+},
+".screenLabel": {
+	bottom: '20dp',
+	color: "#555555",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	font: {
+		fontFamily: 'Open Sans',
+		fontSize: '16dp',
+		fontStyle: 'Condensed Light'
+	}
+},
+"#signupName": {
+	hintText: L('name_label')
+},
+"#signupEmail": {
+	hintText: L('email_label')
+},
+"#signupPhone": {
+	hintText: L('phone_label')
+},
+"#signupButton": {
+	backgroundColor: "#53A93F",
+},
+"#signinEmail": {
+	hintText: L('email_label')
+},
+"#signinPassword": {
+	hintText: L('password_label')
+},
+"#signinButton": {
+	backgroundColor: "#53A93F",
+},
+'#signupButtonLabel': {
+	text: L('signup_label')
+},
+'#signinButtonLabel': {
+	text: L('signin_label')
+},
+".authenticateOptionSwipe": {
+	bottom: '0dp',
+	width: Ti.UI.FILL,
+	height: '60dp',
+},
+"#swipeToSignin": {
+	text: L('swipe_to_signin')
+},
+"#swipeToSignup": {
+	text: L('swipe_to_signup')
+},
+"#oathenticateButtonsView": {
+	height: '60dp',
+	width: Ti.UI.FILL,
+},
+".halfFlushButton": {
+	top: '0dp',
+	height: '60dp',
+	width: Alloy.CFG.halfScreenWidth,
+},
+".halfFlushButtonLabel": {
+	color: "#FFFFFF",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	font: {
+		fontFamily: 'Open Sans Condensed',
+		fontSize: '22dp',
+		fontWeight: 'Bold'
+	}
+},
+"#facebookButton": {
+	backgroundColor: "#5773A2",
+	left: '0dp',
+	top: '0dp',
+	height: '60dp',
+	width: Alloy.CFG.halfScreenWidth,
+},
+"#googleButton": {
+	backgroundColor: "#748BE1",
+	left: Alloy.CFG.halfScreenWidth,
+	top: '0dp',
+	height: '60dp',
+	width: Alloy.CFG.halfScreenWidth,
+},
+"#facebookButtonLabel": {
+	text: L('facebook_auth'),
+},
+"#googleButtonLabel": {
+	text: L('google_auth'),
+},
+"#termsDialog": {
+	title: L('termsagree'),
+},
+".screenLink": {
+	height: '40dp',
+	width: Ti.UI.SIZE,
+	color: "#0000FF",
+	textAlign: Ti.UI.TEXT_ALIGNMENT_CENTER,
+	font: {
+		fontFamily: 'Open Sans',
+		fontSize: '16dp',
+		fontStyle: 'Condensed Light'
+	}
+},
+"#terms": {
+	text: L('terms_statement'),
+},
+"#forgottenPassword": {
+	text: L('set_password'),
+},

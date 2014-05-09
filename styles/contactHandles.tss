@@ -1,0 +1,13 @@
+"#navBarTitle": {
+	text: L('manage_handles'),
+},
+".contactHandleRow": {
+	height: '60dp',
+	textAlign: Ti.UI.TEXT_ALIGNMENT_LEFT,
+	color: '#555555',
+	font: {
+		fontFamily: 'Open Sans Condensed',
+		fontSize: '18dp',
+		fontWeight: 'Bold'
+	},	
+},

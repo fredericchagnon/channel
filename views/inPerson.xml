@@ -1,0 +1,18 @@
+<Alloy>
+    <Window class="container" id="inPersonWindow" fullscreen="false" navBarHidden="false" layout="vertical">
+    	<View class="container" backgroundColor="transparent" id="iosContainer" platform="ios">
+			<View platform="ios" class="statusBar" zIndex="9999" id="statusBar"/>
+			<View platform="ios" class="navBar" zIndex="9999">
+				<View class="leftNavbarButton" id="cancelNavBarButton" onClick="closeInPersonWindow">
+					<ImageView id="ic_navigation_cancel" class="ios_navigation_icon" image="ic_navigation_cancel.png" touchEnabled="false"/>
+				</View>
+				<Label class="navBarTitle" id="navBarTitle"/>
+				<View class="rightNavbarButton" id="switchQRButton" onClick="switchToQR">
+					<ImageView id="ic_action_qr" class="ios_navigation_icon" image="images/ic_action_qr.png" touchEnabled="false"/>
+				</View>
+				<View class="navBarTouchBlocker" id="navBarTouchBlocker" bubbleParent="false" touchEnabled="false"/>
+			</View>
+		</View>
+		<View id="inPersonView" class="container" layout="absolute" touchEnabled="false"/>
+    </Window>
+</Alloy>

@@ -1,0 +1,16 @@
+"#emailNameLabel": {text: L('name_label')},
+"#emailValueLabel": {text: L('email_value_label')},
+"#emailNameValue": {hintText: L('')},
+"#emailValueValue": {hintText: L('')},
+"#deleteEmailButton": {
+	backgroundColor: "#FF5859",
+},
+"#deleteEmailButtonLabel": {
+	text: L('delete'),
+},
+"#saveEmailButton": {
+	backgroundColor: "#53A93F",
+},
+"#saveEmailButtonLabel": {
+	text: L('save'),
+},

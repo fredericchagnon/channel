@@ -1,0 +1,176 @@
+"#contactsView" : {
+ 	 top: '0dp',
+ 	 height: Ti.UI.FILL,
+ 	 width: Alloy.CFG.contactCardWidth,
+ 	 zIndex: 77,
+ 	 backgroundColor: '#FFFFFF',
+},
+".pickerContainer": {
+	top: '0dp',
+	height: '50dp',
+	width: Ti.UI.FILL,
+	zIndex: 777,
+},
+".picker": {
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+},
+".pickerLabel": {
+	left: '0dp',
+	right: '5dp',
+	height: Ti.UI.FILL, 
+	textAlign: Ti.UI.TEXT_ALIGNMENT_RIGHT,
+	color: '#555555',
+	font: {
+		fontFamily: 'Open Sans Condensed',
+		fontSize: '18dp',
+		fontWeight: 'Bold'
+	},	
+},
+"#contactGroupPickerLabel": {
+	text: L('product_category'),
+},
+"#contactGroupSelectorTable":{
+	top: '-240dp',
+	rowHeight: '60dp',
+	font: {
+		fontFamily: 'Open Sans Condensed',
+		fontSize: '18dp',
+		fontWeight: 'Bold'
+	},	
+},
+"#contactHandlesSettingsRow": {
+	title: L('manage_handles'),
+},
+"#deactivateAccountSettingsRow": {
+	title: L('deactivate_account'),
+},
+"#logoutAccountSettingsRow": {
+	title: L('logout'),
+},
+"#connectRow": {
+	title: L('connect'),
+},
+"#connectInPersonRow": {
+	title: L('connect_inperson'),
+},
+"#searchCloudRow": {
+	title: L('search_cloud'),
+},
+"#connectionRequestsRow": {
+	title: L('connection_requests'),
+},
+"#newUserInstruction": {
+	text: L('availability_instruction')	
+},
+"#homeAvailabilityViewLabel": {
+	text: L('home_status')
+},
+"#workAvailabilityViewLabel": {
+	text: L('work_status')
+},
+".thisShadeView": {
+	top: '0dp',
+	left: '0dp',
+	right: '0dp',
+	bottom: '0dp',
+	height: Ti.UI.FILL,
+	width: Ti.UI.FILL,
+	zIndex : 700,
+	backgroundColor : "transparent",
+	opacity : 0.0,
+},
+".contactCardView": {
+	height: '100dp',
+	width: Alloy.CFG.contactCardWidth,
+	top: '10dp',
+	bottom: '5dp',
+	backgroundColor: '#FFFFFF',
+},
+".contactCardAvatar": {
+	left: '5dp',
+	top: '5dp',
+	height: '90dp',
+	width: '90dp',
+},
+".contactCardInfo": {
+	left: '100dp',
+	top: '0dp',
+	height: '50dp',
+	right: '0dp',
+},
+".contactCardNameLabel": {
+	top: '0dp',
+	left: '0dp',
+	right: '0dp',
+	height: '30dp',
+	color: '#555555',
+	font: {
+		fontFamily: 'Open Sans Condensed',
+		fontWeight: 'Bold',
+		fontSize: '18dp',
+	}
+},
+".contactCardJobDeptLabel": {
+	top: '25dp',
+	left: '0dp',
+	right: '0dp',
+	height: '15dp',
+	color: '#555555',
+	font: {
+		fontFamily: 'Open Sans',
+		fontStyle: 'Condensed Light',
+		fontSize: '12dp',
+	}
+},
+".contactChannelContainer": {
+	left: '100dp',
+	right: '0dp',
+	top: '50dp',
+	bottom: '0dp',
+	height: '45dp',
+	width: Alloy.CFG.contactCardWidth,
+	backgroundColor: '#FFFFFF',
+},
+".primaryContactChannel": {
+	left: '0dp',
+	top: '0dp',
+	height: '45dp',
+	width: '98dp',
+	backgroundColor: '#3FA9F5',
+},
+".secondaryContactChannel": {
+	left: '102dp',
+	top: '0dp',
+	height: '45dp',
+	width: '98dp',
+	backgroundColor: '#3FA9F5',
+},
+".contactChannelInnerContainer": {
+	heigth: '50dp',
+	width: Ti.UI.SIZE,
+	horizontalWrap: 'false',
+},
+".contactChannelActionImage": {
+	top: '0dp',
+	height: '30dp',
+	width: '30dp',
+},
+".contactChannelActionLabel": {
+	bottom: '0dp',
+	height: '15dp',
+	textAlign: 'center',
+	color: '#FFFFFF',
+	font: {
+		fontFamily: 'Open Sans Condensed',
+		fontWeight: 'Bold',
+		fontSize: '12dp',
+	}
+},
+".handleSelectorTable": {
+	height: Ti.UI.SIZE,
+	width: '80dp'
+},
+"#handleSelectorTable": {
+	left: '-80dp',
+},

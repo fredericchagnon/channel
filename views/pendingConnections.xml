@@ -1,0 +1,27 @@
+<Alloy>
+    <Collection src="connections"/>
+    <Window class="container" id="pendingConnectionsWindow" fullscreen="false" navBarHidden="false" layout="vertical">
+		<View platform="ios" class="statusBar" id="statusBar"/>
+		<View platform="ios" class="navBar">
+			<View class="leftNavbarButton" id="cancelNavBarButton" onClick="closePendingConnectionsWindow">
+				<ImageView id="ic_navigation_cancel" class="ios_navigation_icon" image="ic_navigation_cancel.png" touchEnabled="false"/>
+			</View>
+			<Label class="navBarTitle" id="navBarTitle"/>
+			<View class="navBarTouchBlocker" id="navBarTouchBlocker" bubbleParent="false" touchEnabled="false"/>
+		</View>
+		<View class="container" layout="absolute">
+			<View id="emptyPendingConnectionsView" class="container" layout="absolute" touchEnabled="false">
+				<Label id="emptyPendingConnectionsLabel" class="screenLabel" color="#555555"/>
+			</View>
+			<ScrollView id="pendingConnectionsView" class="container" layout="absolute" touchEnabled="true">
+		        <TableView id="pendingConnectionsTable" onClick="actOnPendingIncomingConnection" top="0dp"/>
+	<!-- 	        <TableView dataCollection="connections" onClick="actOnPendingIncomingConnection" top="0dp">
+		            <TableViewRow class="incomingRequestsRow" hasChild="true" pending_connection_id="{id}">
+		            	<ImageView class="contactHandleImage" image="{image}"/>
+		            	<Label class="contactHandleName" text="{fromName}"/>
+		            </TableViewRow>
+		        </TableView> -->
+			</ScrollView>
+		</View>
+    </Window>
+</Alloy>
